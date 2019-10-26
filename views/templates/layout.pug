@@ -14,6 +14,9 @@ html.no-js(lang="ru")
     link(rel="stylesheet", href="css/styles.min.css")
 
   body.page
+    div(style="display: none;")
+      include ../../build/img/sprite.svg
+
     include ../includes/header
     block content
     include ../includes/footer

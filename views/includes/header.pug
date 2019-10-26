@@ -14,9 +14,15 @@ header.page-header
       span online
 
     a.page-header__link(href="tel:81234567890")
+      svg(width="13", height="13")
+        use(href="#phone")
+
       b 8 123 45 67 890
 
     a.page-header__link(href="#")
+      svg(width="13", height="13")
+        use(href="#location")
+
       span Ростов-на-Дону
 
   .page-header__right
@@ -29,5 +35,7 @@ header.page-header
 
     .page-header__user-area.user-area
       span.user-area__sign
+        svg(width="13", height="13")
+          use(href="#user")
 
       a.user-area__link(href="#") Личный кабинет
