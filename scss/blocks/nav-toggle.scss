@@ -1,0 +1,25 @@
+.nav-toggle {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+
+    width: 13px;
+    height: 2px;
+
+    background-color: #171a1e;
+    transform: translate(-50%);
+  }
+
+  &::before {
+    top: 13px;
+    box-shadow: 0 4px 0 #171a1e;
+  }
+
+  &::after {
+    bottom: 12px;
+  }
+}

@@ -1,0 +1,41 @@
+.page-header {
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.page-header__wrapper {
+  @include container;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 21px;
+}
+
+.page-header__link {
+  @include link-reset;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+
+  &--underline {
+    * {
+      &:not(svg) {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  * {
+    vertical-align: middle;
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+}

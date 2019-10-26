@@ -1,0 +1,26 @@
+.user-area {
+  display: flex;
+  align-items: center;
+}
+
+.user-area__sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  color: #171a1e;
+}
+
+.user-area__link {
+  @include link-reset;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+
+  .user-area__text {
+    display: none;
+  }
+}

@@ -20,10 +20,10 @@
 
 @mixin btn {
   box-sizing: border-box;
-  display: inline-block;
+  display: block;
   padding: 0;
-  border: none;
 
+  border: none;
   background-color: transparent;
   cursor: pointer;
 }

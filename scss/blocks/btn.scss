@@ -1,0 +1,14 @@
+.btn {
+  @include btn;
+
+  &--prime {
+    color: #ffffff;
+    background-color: $color-prime;
+  }
+
+  &--circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+}

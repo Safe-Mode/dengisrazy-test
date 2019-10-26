@@ -8,34 +8,60 @@
 
 header.page-header
   .page-header__wrapper
-    .page-header__left
-      a.page-header__logo.logo(href="index.html")
+    button.page-header__nav-toggle.nav-toggle.btn.btn--prime.btn--circle(
+        type="button"
+        aria-label="Открыть/закрыть меню")
+
+    a.page-header__logo.logo(href="index.html")
       b Cash
       span online
 
-    a.page-header__link(href="tel:81234567890")
+    a.page-header__link.page-header__link--desktop(href="tel:81234567890")
       svg(width="13", height="13")
         use(href="#phone")
 
       b 8 123 45 67 890
 
-    a.page-header__link(href="#")
-      svg(width="13", height="13")
+    a.page-header__link.page-header__link--underline.page-header__link--desktop(href="#")
+      svg(width="9", height="13")
         use(href="#location")
 
       span Ростов-на-Дону
 
-  .page-header__right
-    nav.page-header__nav.main-nav
+    nav.page-header__nav.main-nav.main-nav--desktop
       ul.main-nav__list
 
-      each item in navItems
-        li.main-nav__item
-          a.main-nav__link(href="#")= item
+        each item in navItems
+          li.main-nav__item
+            a.main-nav__link(href="#")= item
 
     .page-header__user-area.user-area
-      span.user-area__sign
-        svg(width="13", height="13")
-          use(href="#user")
+      a.user-area__link(href="#")
+        span.user-area__sign.btn.btn--prime.btn--circle(href="#")
+          svg(width="13", height="15")
+            use(href="#user")
 
-      a.user-area__link(href="#") Личный кабинет
+        span.user-area__text Личный кабинет
+
+  .page-header__mobile-menu
+    .page-header__wrapper
+      nav.page-header__nav.main-nav--mobile
+        ul.main-nav__list
+
+          each item in navItems
+            li.main-nav__item
+              a.main-nav__link(href="#")= item
+
+      a.page-header__link.page-header__link--mobile(href="tel:81234567890")
+        svg(width="13", height="13")
+          use(href="#phone")
+
+        b 8 123 45 67 890
+
+      a.page-header__link.page-header__link--underline.page-header__link--mobile(href="#")
+        svg(width="9", height="13")
+          use(href="#location")
+
+        span Ростов-на-Дону
+
+      a.page-header__loan(href="#") Оформить займ

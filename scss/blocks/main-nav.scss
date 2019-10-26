@@ -1,0 +1,18 @@
+.main-nav {
+  &--desktop {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__link {
+  @include link-reset;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: capitalize;
+}
