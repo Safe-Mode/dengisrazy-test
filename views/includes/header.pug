@@ -1,1 +1,33 @@
+-
+  var navItems = [
+    'О компании',
+    'Заёмщику',
+    'Вопросы',
+    'Контакты'
+  ];
+
 header.page-header
+  .page-header__wrapper
+    .page-header__left
+      a.page-header__logo.logo(href="index.html")
+      b Cash
+      span online
+
+    a.page-header__link(href="tel:81234567890")
+      b 8 123 45 67 890
+
+    a.page-header__link(href="#")
+      span Ростов-на-Дону
+
+  .page-header__right
+    nav.page-header__nav.main-nav
+      ul.main-nav__list
+
+      each item in navItems
+        li.main-nav__item
+          a.main-nav__link(href="#")= item
+
+    .page-header__user-area.user-area
+      span.user-area__sign
+
+      a.user-area__link(href="#") Личный кабинет
