@@ -6,6 +6,17 @@
   line-height: 1;
   text-transform: uppercase;
 
+  &--white {
+    color: #ffffff;
+    transition: color $hover-time;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-prime;
+    }
+  }
+
   * {
     display: block;
   }

@@ -7,10 +7,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
   width: 35px;
   height: 35px;
   color: #171a1e;
+
+  &--transparent {
+    color: $color-prime;
+    background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #ffffff;
+      background-color: $color-prime;
+    }
+  }
 }
 
 .user-area__link {

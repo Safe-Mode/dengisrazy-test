@@ -8,11 +8,11 @@
 
 header.page-header
   .page-header__wrapper
-    button.page-header__nav-toggle.nav-toggle.btn.btn--prime.btn--circle(
+    button.page-header__nav-toggle.nav-toggle.nav-toggle--active.btn.btn--prime.btn--circle(
         type="button"
         aria-label="Открыть/закрыть меню")
 
-    a.page-header__logo.logo(href="index.html")
+    a.page-header__logo.logo.logo--white(href="index.html")
       b Cash
       span online
 
@@ -37,7 +37,7 @@ header.page-header
 
     .page-header__user-area.user-area
       a.user-area__link(href="#")
-        span.user-area__sign.btn.btn--prime.btn--circle(href="#")
+        span.user-area__sign.user-area__sign--transparent.btn.btn--prime.btn--circle(href="#")
           svg(width="13", height="15")
             use(href="#user")
 
@@ -59,9 +59,6 @@ header.page-header
         b 8 123 45 67 890
 
       a.page-header__link.page-header__link--underline.page-header__link--mobile(href="#")
-        svg(width="9", height="13")
-          use(href="#location")
+        span Заказать обратный звонок
 
-        span Ростов-на-Дону
-
-      a.page-header__loan(href="#") Оформить займ
+      a.page-header__loan.btn.btn--default.btn--prime(href="#") Оформить займ

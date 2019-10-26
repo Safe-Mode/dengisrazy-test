@@ -15,11 +15,33 @@
   }
 
   &::before {
-    top: 13px;
+    top: 12px;
     box-shadow: 0 4px 0 #171a1e;
   }
 
   &::after {
-    bottom: 12px;
+    bottom: 11px;
+  }
+
+  &--active {
+    background-color: transparent;
+    border-color: transparent;
+
+    &::before,
+    &::after {
+      top: 50%;
+      width: 20px;
+      height: 3px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
   }
 }
