@@ -65,6 +65,10 @@
 
   background-color: $color-second;
 
+  &--hidden {
+    display: none;
+  }
+
   .page-header__wrapper {
     display: block;
     text-align: center;
