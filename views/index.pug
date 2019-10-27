@@ -3,8 +3,27 @@ extends templates/layout
 block vars
   - var page = 'index'
   - var breadcrumbs = ['Главная', 'Блог']
+  - var filters = ['Все', 'Технические решения', 'Правовые отношения', 'Юридическая информация', 'Общая информация']
 
 block content
   +breadcrumbs(breadcrumbs)
 
-  main.page-main
+  main.page-main.page-main--inner
+    h1.page-title
+      span.page-title__sign
+        svg(width="18", height="18")
+          use(href="#blog")
+
+      span.page-title__text Блог
+
+    .page-main__filter.filter
+      .filter__wrapper
+        .filter__select
+          select
+            each filter, i in filters
+              option(value= filter, selected = (i) ? false : true)= filter
+
+        ul.filter__list
+          each filter, i in filters
+            li.filter__item(class= (i) ? '' : 'filter__item--active')
+              a.filter__link(href="#")= filter

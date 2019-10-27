@@ -46,3 +46,39 @@
   padding: 0;
   border: none;
 }
+
+@mixin select {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 23px;
+
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+
+    border: 1px solid $color-prime;
+    border-top: none;
+    border-right: none;
+    transform: translateY(-75%) rotate(-45deg);
+  }
+
+  select {
+    padding: 0 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+
+    color: $color-prime;
+    font-family: inherit;
+
+    background-color: transparent;
+    border: 1px solid currentColor;
+    border-radius: 54px;
+    appearance: none;
+  }
+}
