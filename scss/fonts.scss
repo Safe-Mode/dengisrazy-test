@@ -26,3 +26,13 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: local("IBM Plex Sans"),
+    local("IBMPlexSans"),
+    url("../fonts/Ibmplexsans.woff2") format("woff2"),
+    url("../fonts/Ibmplexsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
