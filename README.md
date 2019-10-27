@@ -13,4 +13,4 @@ CSS-препроцессор: SCSS;<br>
 <strong>npm start</strong> - запуск проекта.<br>
 <strong>npm test</strong> - проверка ошибок по кодгайду.<br>
 
-Если не получилось - <a href="https://drive.google.com/file/d/1Ve4sYlPQx4IRFMGcIeUXOPiTmRwj3LN2/view?usp=sharing" target="_blank">план "Б"</a>
+Если не получилось - <a href="https://drive.google.com/file/d/1Ve4sYlPQx4IRFMGcIeUXOPiTmRwj3LN2/view?usp=sharing">план "Б"</a>
