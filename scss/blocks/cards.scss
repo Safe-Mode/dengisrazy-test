@@ -1,0 +1,47 @@
+.cards__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+  margin-bottom: 30px;
+
+  @media (min-width: $width-tablet-l) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.cards__item {
+  flex-shrink: 0;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  max-width: 280px;
+
+  @media (min-width: $width-tablet-l) {
+    margin: 0;
+    max-width: 625px;
+  }
+}
+
+.cards__load {
+  @include link-reset;
+
+  display: block;
+  margin: 0 auto;
+  width: 190px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #ffffff;
+
+  @media (min-width: $width-tablet-l) {
+    width: 210;
+    font-size: 14px;
+  }
+}

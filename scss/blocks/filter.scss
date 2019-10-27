@@ -20,7 +20,12 @@
 
 .filter__list {
   @include list-reset;
-  display: flex;
+
+  display: none;
+
+  @media (min-width: $width-tablet-l) {
+    display: flex;
+  }
 }
 
 .filter__item {

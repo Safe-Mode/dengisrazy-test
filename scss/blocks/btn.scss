@@ -37,7 +37,7 @@
     border-radius: 97px;
     box-shadow: 0 6px 20px rgba(74, 210, 112, 0.6);
 
-    transition-property: box-shadow;
+    transition-property: color, background-color, box-shadow;
 
     &:hover,
     &:focus,

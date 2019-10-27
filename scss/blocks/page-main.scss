@@ -1,4 +1,21 @@
+.page-main__wrapper {
+  @include container;
+}
+
 .page-main__filter {
   margin-top: 20px;
   margin-bottom: 30px;
+
+  @media (min-width: $width-laptop) {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.page-main__cards {
+  margin-bottom: 50px;
+
+  @media (min-width: $width-laptop) {
+    margin-bottom: 60px;
+  }
 }

@@ -9,15 +9,15 @@ block content
   +breadcrumbs(breadcrumbs)
 
   main.page-main.page-main--inner
-    h1.page-title
-      span.page-title__sign
-        svg(width="18", height="18")
-          use(href="#blog")
+    .page-main__wrapper
+      h1.page-title
+        span.page-title__sign
+          svg(width="18", height="18")
+            use(href="#blog")
 
-      span.page-title__text Блог
+        span.page-title__text Блог
 
-    .page-main__filter.filter
-      .filter__wrapper
+      .page-main__filter.filter
         .filter__select
           select
             each filter, i in filters
@@ -27,3 +27,23 @@ block content
           each filter, i in filters
             li.filter__item(class= (i) ? '' : 'filter__item--active')
               a.filter__link(href="#")= filter
+
+      .page-main__cards.cards
+        ul.cards__list
+          - var cards = new Array(4)
+
+          each card in cards
+            li.cards__item
+              article.card
+                a.card__link(href="#")
+                  header.card__header
+                    span.card__cat Технические решения
+                    time.card__time(datetime="2019-09-30") 30 сентября 2019
+                  section.card__body
+                    .card__preview
+                      h3.card__title Как повысить свои шансы на получение займа ?
+                      p Многие заемщики интересуются: как добиться одобрения заявки в той или иной микрофинансовой организации, не прикладывая особых усилий? Как добиться одобрения заявки в той или иной организации, не прикладывая особых усилий?
+
+        a.cards__load.btn.btn--prime.btn--default(href="#") Показать ещё
+
+
