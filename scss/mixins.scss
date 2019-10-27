@@ -3,19 +3,6 @@
   margin: 0 auto;
   padding: 0 20px;
   min-width: $width-mobile;
-
-  @media (min-width: $width-tablet-s) {
-    padding: 0 25px;
-  }
-
-  @media (min-width: $width-tablet-m) {
-    padding: 0 35px;
-  }
-
-  @media (min-width: $width-tablet-l) {
-    padding-right: 70px;
-    padding-left: 180px;
-  }
 }
 
 @mixin btn {
