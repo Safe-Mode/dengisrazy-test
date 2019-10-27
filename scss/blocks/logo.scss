@@ -5,10 +5,23 @@
   font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
+  transition: color $hover-time;
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &[href] {
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      color: $color-prime;
+    }
+  }
 
   &--white {
     color: #ffffff;
-    transition: color $hover-time;
 
     &:hover,
     &:focus,
